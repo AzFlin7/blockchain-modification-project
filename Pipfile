@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sanic = "*"
+uvloop = "*"
+ujson = "*"
+requests = "*"
+gunicorn = "*"
+gino = "*"
+apscheduler = "*"
+raven = {extras = ["sanic"]}
+blinker = "*"
+
+[dev-packages]
+pylint = "<2.0.0"
+black = "*"
+
+[requires]
+python_version = "3.6"

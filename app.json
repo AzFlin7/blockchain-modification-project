@@ -1,0 +1,26 @@
+{
+  "name": "Exchange rates API",
+  "description": "A painless Exchange rates API",
+  "website": "https://exchangeratesapi.io",
+  "repository": "https://github.com/madisvain/exchangeratesapi",
+  "logo": "https://exchangeratesapi.io/static/logo.svg",
+  "keywords": [
+    "python",
+    "sanic",
+    "api",
+    "exchange rates"
+  ],
+  "env": {
+    "WEB_CONCURRENCY": {
+      "description": "The number of gunicorn workers to run.",
+      "value": "4"
+    },
+    "SENTRY_DSN": {
+      "description": "To enable Sentry integration provide your Sentry DSN.",
+      "required": false
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
